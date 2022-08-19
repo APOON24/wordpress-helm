@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  wordpress-helm:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-19T17:35:46.7149141+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 8709dbe2f5e8cbd0820d8ffdf5cc8c11c7cd0de34e81aa953175b05c550e7b7b
+    name: wordpress-helm
+    type: application
+    urls:
+    - https://apoon24.github.io/wordpress-helm/2-Wordpress-helm/wordpress-helm-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-08-19T17:35:46.7086501+02:00"
