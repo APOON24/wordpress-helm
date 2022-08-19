@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind : Deployment
+metadata:
+  name: wordpress-test
+  labels:
+    app: wordpress
+spec:
+  selector:
+      matchLabels:
+        app: wordpress
+  template:
+    metadata:
+      labels:
+        app: wordpress
+    spec:
+      containers:
+      - image: {{.Values.container.image}}
+        name: {{.Values.container.name}}
+        ports:
+        - containerPort: {{.Values.container.port}}
+          name : {{.Values.container.name}}
